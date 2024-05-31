@@ -1,7 +1,6 @@
 
 
 const scoreEl = document.querySelector('#scoreEl')
-const gameoverText = document.querySelector('#gameover_text')
 const canvas = document.querySelector('canvas')
 const c = canvas.getContext('2d')
 
@@ -18,7 +17,6 @@ class Player {
       }
 
       this.rotation = 0
-
       this.opacity = 1
 
       const image = new Image()
@@ -278,9 +276,7 @@ let game = {
 
 let score = 0
 
-if (game.active = true) {
-    gameoverText.style.display = "none"
-} 
+
 
 
 for (let i = 0; i < 100; i++) {
@@ -291,7 +287,7 @@ for (let i = 0; i < 100; i++) {
         }, 
         velocity: {
             x: 0,
-            y: 10.3
+            y: 17.3
         },
         radius: Math.random() * 3,
         color: 'BLUE'
